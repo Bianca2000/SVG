@@ -1,0 +1,92 @@
+*{
+  margin:0;
+  pedding:0;
+  box-sizing:border-box;
+  border:solid 0px red;
+}
+body{
+  display: grid;
+  place-items:center;
+}
+.icon{
+  width: 70px;
+  height: 70px;
+  background: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.bike{
+  -webkit-mask:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-bike-black.svg);
+          mask:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-bike-black.svg);
+  -webkit-mask-size:cover;
+          mask-size:cover;
+}
+.bell{
+  -webkit-mask:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-bell-black.svg);
+          mask:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-bell-black.svg);
+  -webkit-mask-size:cover;
+          mask-size:cover;
+}
+.arrow{
+  -webkit-mask:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-arrow-black.svg);
+          mask:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-arrow-black.svg);
+  -webkit-mask-size:cover;
+          mask-size:cover;
+}
+.bike:hover{
+  background: blue;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+.bell:hover{
+  background: red;
+  -webkit-transform: scalex(2);
+          transform: scalex(2);
+}
+.arrow:hover{
+  background: rgba(54, 117, 181 ,0.6);
+  -webkit-transform: scale(2) rotate(45deg);
+          transform: scale(2) rotate(45deg);
+}
+.smile{
+  -webkit-animation-name: smile;
+          animation-name: smile;
+  -webkit-animation-duration:2s;
+          animation-duration:2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction:alternate;
+          animation-direction:alternate;
+}
+@-webkit-keyframes smile{
+  0%{
+    background:#183;
+  }
+  25%{
+    background:#388;
+  }
+  50%{
+    background:#b11;
+    -webkit-transform: scale(2.25) rotate(-350deg);
+            transform: scale(2.25) rotate(-350deg);
+  }
+  100%{
+    background:#f95;
+  }
+}
+@keyframes smile{
+  0%{
+    background:#183;
+  }
+  25%{
+    background:#388;
+  }
+  50%{
+    background:#b11;
+    -webkit-transform: scale(2.25) rotate(-350deg);
+            transform: scale(2.25) rotate(-350deg);
+  }
+  100%{
+    background:#f95;
+  }
+}
